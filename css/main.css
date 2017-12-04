@@ -1,0 +1,117 @@
+* {
+    font-family: Arial;
+}
+
+html body {
+    background: #2F2F2F;
+}
+
+ul {
+    list-style: none;
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 140px;
+    height: 170px;
+    background: whitesmoke;
+    margin: 5px;
+    border: 2px orange solid;
+    border-radius: 10px;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+
+.item.active-item {
+    background: hsl(24, 100%, 95%);
+    border: solid 2px orangered;
+}
+
+.item .text span {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.item img {
+    display: block;
+    margin: 10px auto;
+    width: 120px;
+    height: 90px;
+}
+
+.item .item-name {
+    font-weight: bolder;
+}
+
+.item .item-price {
+    color: forestgreen;
+}
+
+.rect {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background: deepskyblue;
+}
+
+.rect:visited {
+    background: darkblue;
+}
+
+.rect:hover {
+    background: orangered;
+}
+
+#result_pict, #tomato_layer, #cheese_layer, #mushroom_layer, #beacon_layer, #fish_layer {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background: no-repeat center;
+    background-size: 300px 300px;
+    visibility: hidden;
+}
+
+#result_pict {
+    background-image: url("../img/pastry.png");
+    margin: 0px auto;
+    z-index: auto;
+    position: inherit;
+    visibility: visible;
+}
+
+#tomato_layer {
+    background-image: url("../img/tomato.png");
+    z-index: 1;
+}
+
+#cheese_layer {
+    background-image: url("../img/cheese.png");
+    z-index: 2;
+}
+
+#mushroom_layer {
+    background-image: url("../img/mushroom.png");
+    z-index: 5;
+}
+
+#beacon_layer {
+    background-image: url("../img/beacon.png");
+    z-index: 3;
+}
+
+#fish_layer {
+    background-image: url("../img/fish.png");
+    z-index: 4;
+}
+
+#result {
+    color: deepskyblue;
+    font-weight: bold;
+
+}

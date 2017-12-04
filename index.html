@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+</head>
+<body onload="initPrice()">
+<div class="container">
+    <div class="row">
+        <ul>
+            <li>
+                <div id="pastry" class="item" onclick="onItemClick(this)">
+                    <img src="img/pastry_item.png">
+                    <div class="text">
+                        <span class="item-name" price="100">Тесто</span>
+                        <span class="item-price">50 руб.</span>
+                    </div>
+                </div>
+                <div id="tomato" class="item" onclick="onItemClick(this)">
+                    <img src="img/tomato_item.png">
+                    <div class="text">
+                        <span class="item-name">Соус томатный</span>
+                        <span class="item-price">30 руб.</span>
+                    </div>
+                </div>
+                <div id="cheese" class="item" onclick="onItemClick(this)">
+                    <img src="img/cheese_item.png">
+                    <div class="text">
+                        <span class="item-name">Сыр</span>
+                        <span class="item-price">100 руб.</span>
+                    </div>
+                </div>
+                <div id="mushroom" class="item" onclick="onItemClick(this)">
+                    <img src="img/mushroom_item.png">
+                    <div class="text">
+                        <span class="item-name">Грибы</span>
+                        <span class="item-price">50 руб.</span>
+                    </div>
+                </div>
+                <div id="beacon" class="item" onclick="onItemClick(this)">
+                    <img src="img/beacon_item.png">
+                    <div class="text">
+                        <span class="item-name">Бекон</span>
+                        <span class="item-price">50 руб.</span>
+                    </div>
+                </div>
+                <div id="fish" class="item" onclick="onItemClick(this)">
+                    <img src="img/fish_item.png">
+                    <div class="text">
+                        <span class="item-name">Рыба</span>
+                        <span class="item-price">100 руб.</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div id="result_pict">
+            <div id="tomato_layer"></div>
+            <div id="cheese_layer"></div>
+            <div id="mushroom_layer"></div>
+            <div id="beacon_layer"></div>
+            <div id="fish_layer"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="result" class="col-md-3"/>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
